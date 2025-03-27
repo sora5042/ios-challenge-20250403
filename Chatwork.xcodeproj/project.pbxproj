@@ -10,6 +10,7 @@
 		47EF3FEE2D94F5240044FD58 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; };
 		47EF3FF92D94F5240044FD58 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; };
 		47EF3FFA2D94F5240044FD58 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		47EF40232D9520ED0044FD58 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 47EF40222D9520ED0044FD58 /* KeychainAccess */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EF40232D9520ED0044FD58 /* KeychainAccess in Frameworks */,
 				47EF3FF92D94F5240044FD58 /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +212,7 @@
 			);
 			name = Chatwork;
 			packageProductDependencies = (
+				47EF40222D9520ED0044FD58 /* KeychainAccess */,
 			);
 			productName = Chatwork;
 			productReference = 47EF3FB22D94EAB60044FD58 /* Chatwork.app */;
@@ -347,6 +350,9 @@
 			);
 			mainGroup = 47EF3FA92D94EAB60044FD58;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				47EF40212D9520ED0044FD58 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 47EF3FB32D94EAB60044FD58 /* Products */;
 			projectDirPath = "";
@@ -877,6 +883,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		47EF40212D9520ED0044FD58 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = exactVersion;
+				version = 4.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		47EF40222D9520ED0044FD58 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47EF40212D9520ED0044FD58 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 47EF3FAA2D94EAB60044FD58 /* Project object */;
 }

@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let logger = Logger()
+
 @main
 struct ChatworkApp: App {
     var body: some Scene {
