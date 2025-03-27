@@ -1,0 +1,77 @@
+name: Chatwork
+configs:
+  Debug: debug
+  Release: release
+  Test: debug
+options:
+  bundleIdPrefix: jp.ooayosora
+  defaultConfig: Release
+  deploymentTarget:
+    iOS: 16.4
+  developmentLanguage: ja
+  xcodeVersion: "16.0"
+settings:
+  base:
+    CODE_SIGN_STYLE: Automatic
+    TARGETED_DEVICE_FAMILY: "1,2"
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+configurations:
+  Debug:
+    buildSettings:
+      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
+      ENABLE_TESTABILITY: YES
+  Release:
+    buildSettings:
+      SWIFT_OPTIMIZATION_LEVEL: "-Owholemodule"
+packages:
+  KeychainAccess:
+    url: https://github.com/kishikawakatsumi/KeychainAccess
+    version: 4.2.2
+targets:
+  Chatwork:
+    type: application
+    platform: iOS
+    info:
+      path: Chatwork/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: jp.ooayosora.Chatwork
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    sources:
+      - path: Chatwork
+    resources:
+      - path: Chatwork/Assets.xcassets
+      - path: Chatwork/Preview Content
+    dependencies:
+      - target: API
+      - package: KeychainAccess
+  ChatworkTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: ChatworkTests
+    dependencies:
+      - target: Chatwork
+  ChatworkUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: ChatworkUITests
+    dependencies:
+      - target: Chatwork
+  API:
+    type: framework
+    platform: iOS
+    info:
+      path: API/Info.plist
+    sources:
+      - path: API
+    resources: []
+    dependencies: []
+  APITests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: APITests
+    dependencies:
+      - target: API
