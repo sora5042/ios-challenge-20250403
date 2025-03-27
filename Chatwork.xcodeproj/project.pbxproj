@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		47EF3FEE2D94F5240044FD58 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; };
+		47EF3FF92D94F5240044FD58 /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; };
+		47EF3FFA2D94F5240044FD58 /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 47EF3FE42D94F5230044FD58 /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		47EF3FC32D94EAB70044FD58 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,60 @@
 			remoteGlobalIDString = 47EF3FB12D94EAB60044FD58;
 			remoteInfo = Chatwork;
 		};
+		47EF3FEF2D94F5240044FD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EF3FAA2D94EAB60044FD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EF3FE32D94F5230044FD58;
+			remoteInfo = API;
+		};
+		47EF3FF12D94F5240044FD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EF3FAA2D94EAB60044FD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EF3FB12D94EAB60044FD58;
+			remoteInfo = Chatwork;
+		};
+		47EF3FF72D94F5240044FD58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 47EF3FAA2D94EAB60044FD58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47EF3FE32D94F5230044FD58;
+			remoteInfo = API;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		47EF3FFF2D94F5240044FD58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				47EF3FFA2D94F5240044FD58 /* API.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		47EF3FB22D94EAB60044FD58 /* Chatwork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chatwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EF3FC22D94EAB70044FD58 /* ChatworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		47EF3FCC2D94EAB70044FD58 /* ChatworkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EF3FE42D94F5230044FD58 /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47EF3FED2D94F5240044FD58 /* APITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		47EF3FFB2D94F5240044FD58 /* Exceptions for "API" folder in "API" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			publicHeaders = (
+				API.h,
+			);
+			target = 47EF3FE32D94F5230044FD58 /* API */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		47EF3FB42D94EAB60044FD58 /* Chatwork */ = {
@@ -45,6 +98,19 @@
 			path = ChatworkUITests;
 			sourceTree = "<group>";
 		};
+		47EF3FE52D94F5230044FD58 /* API */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				47EF3FFB2D94F5240044FD58 /* Exceptions for "API" folder in "API" target */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		47EF3FF32D94F5240044FD58 /* APITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = APITests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47EF3FF92D94F5240044FD58 /* API.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,12 +136,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47EF3FE12D94F5230044FD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EF3FEA2D94F5240044FD58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47EF3FEE2D94F5240044FD58 /* API.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		47EF3FA92D94EAB60044FD58 = {
 			isa = PBXGroup;
 			children = (
+				47EF3FE52D94F5230044FD58 /* API */,
+				47EF3FF32D94F5240044FD58 /* APITests */,
 				47EF3FB42D94EAB60044FD58 /* Chatwork */,
 				47EF3FC52D94EAB70044FD58 /* ChatworkTests */,
 				47EF3FCF2D94EAB70044FD58 /* ChatworkUITests */,
@@ -88,11 +172,23 @@
 				47EF3FB22D94EAB60044FD58 /* Chatwork.app */,
 				47EF3FC22D94EAB70044FD58 /* ChatworkTests.xctest */,
 				47EF3FCC2D94EAB70044FD58 /* ChatworkUITests.xctest */,
+				47EF3FE42D94F5230044FD58 /* API.framework */,
+				47EF3FED2D94F5240044FD58 /* APITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		47EF3FDF2D94F5230044FD58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		47EF3FB12D94EAB60044FD58 /* Chatwork */ = {
@@ -102,10 +198,12 @@
 				47EF3FAE2D94EAB60044FD58 /* Sources */,
 				47EF3FAF2D94EAB60044FD58 /* Frameworks */,
 				47EF3FB02D94EAB60044FD58 /* Resources */,
+				47EF3FFF2D94F5240044FD58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				47EF3FF82D94F5240044FD58 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				47EF3FB42D94EAB60044FD58 /* Chatwork */,
@@ -163,6 +261,53 @@
 			productReference = 47EF3FCC2D94EAB70044FD58 /* ChatworkUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		47EF3FE32D94F5230044FD58 /* API */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EF3FFC2D94F5240044FD58 /* Build configuration list for PBXNativeTarget "API" */;
+			buildPhases = (
+				47EF3FDF2D94F5230044FD58 /* Headers */,
+				47EF3FE02D94F5230044FD58 /* Sources */,
+				47EF3FE12D94F5230044FD58 /* Frameworks */,
+				47EF3FE22D94F5230044FD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				47EF3FE52D94F5230044FD58 /* API */,
+			);
+			name = API;
+			packageProductDependencies = (
+			);
+			productName = API;
+			productReference = 47EF3FE42D94F5230044FD58 /* API.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		47EF3FEC2D94F5240044FD58 /* APITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47EF40002D94F5240044FD58 /* Build configuration list for PBXNativeTarget "APITests" */;
+			buildPhases = (
+				47EF3FE92D94F5240044FD58 /* Sources */,
+				47EF3FEA2D94F5240044FD58 /* Frameworks */,
+				47EF3FEB2D94F5240044FD58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				47EF3FF02D94F5240044FD58 /* PBXTargetDependency */,
+				47EF3FF22D94F5240044FD58 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				47EF3FF32D94F5240044FD58 /* APITests */,
+			);
+			name = APITests;
+			packageProductDependencies = (
+			);
+			productName = APITests;
+			productReference = 47EF3FED2D94F5240044FD58 /* APITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -181,6 +326,13 @@
 						TestTargetID = 47EF3FB12D94EAB60044FD58;
 					};
 					47EF3FCB2D94EAB70044FD58 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 47EF3FB12D94EAB60044FD58;
+					};
+					47EF3FE32D94F5230044FD58 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					47EF3FEC2D94F5240044FD58 = {
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 47EF3FB12D94EAB60044FD58;
 					};
@@ -203,6 +355,8 @@
 				47EF3FB12D94EAB60044FD58 /* Chatwork */,
 				47EF3FC12D94EAB70044FD58 /* ChatworkTests */,
 				47EF3FCB2D94EAB70044FD58 /* ChatworkUITests */,
+				47EF3FE32D94F5230044FD58 /* API */,
+				47EF3FEC2D94F5240044FD58 /* APITests */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +377,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		47EF3FCA2D94EAB70044FD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EF3FE22D94F5230044FD58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EF3FEB2D94F5240044FD58 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +421,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		47EF3FE02D94F5230044FD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47EF3FE92D94F5240044FD58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +447,21 @@
 			isa = PBXTargetDependency;
 			target = 47EF3FB12D94EAB60044FD58 /* Chatwork */;
 			targetProxy = 47EF3FCD2D94EAB70044FD58 /* PBXContainerItemProxy */;
+		};
+		47EF3FF02D94F5240044FD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EF3FE32D94F5230044FD58 /* API */;
+			targetProxy = 47EF3FEF2D94F5240044FD58 /* PBXContainerItemProxy */;
+		};
+		47EF3FF22D94F5240044FD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EF3FB12D94EAB60044FD58 /* Chatwork */;
+			targetProxy = 47EF3FF12D94F5240044FD58 /* PBXContainerItemProxy */;
+		};
+		47EF3FF82D94F5240044FD58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47EF3FE32D94F5230044FD58 /* API */;
+			targetProxy = 47EF3FF72D94F5240044FD58 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -518,6 +715,110 @@
 			};
 			name = Release;
 		};
+		47EF3FFD2D94F5240044FD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooyasora.API;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		47EF3FFE2D94F5240044FD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooyasora.API;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		47EF40012D94F5240044FD58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooyasora.APITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatwork";
+			};
+			name = Debug;
+		};
+		47EF40022D94F5240044FD58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooyasora.APITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatwork.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Chatwork";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +854,24 @@
 			buildConfigurations = (
 				47EF3FDD2D94EAB70044FD58 /* Debug */,
 				47EF3FDE2D94EAB70044FD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EF3FFC2D94F5240044FD58 /* Build configuration list for PBXNativeTarget "API" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EF3FFD2D94F5240044FD58 /* Debug */,
+				47EF3FFE2D94F5240044FD58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47EF40002D94F5240044FD58 /* Build configuration list for PBXNativeTarget "APITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47EF40012D94F5240044FD58 /* Debug */,
+				47EF40022D94F5240044FD58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
