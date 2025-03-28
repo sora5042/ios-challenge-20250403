@@ -21,6 +21,9 @@ struct LoginView: View {
             Spacer()
         }
         .padding()
+        .background(Color.lightGray)
+        .alert($viewModel.error)
+        .loading(isPresented: viewModel.isLoading)
     }
 
     private var title: some View {
@@ -50,12 +53,13 @@ private struct LoginForm: View {
             } label: {
                 Text("ログイン")
                     .font(.title3)
-                    .foregroundStyle(.black)
-                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
                     .padding()
-                    .background(.teal)
+                    .background(Color.deepNavy)
                     .cornerRadius(10)
             }
+            .disabled(apiToken.isEmpty, dimmed: true)
         }
         .padding(.horizontal)
     }
