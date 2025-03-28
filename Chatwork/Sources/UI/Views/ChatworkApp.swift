@@ -13,7 +13,7 @@ let logger = Logger()
 struct ChatworkApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }

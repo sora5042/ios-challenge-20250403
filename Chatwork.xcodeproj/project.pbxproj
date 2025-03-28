@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B0E30B2BF37B8753D7BC747 /* ChatworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60FC3EE3AF7CE9DE234BA633 /* ChatworkApp.swift */; };
-		255A879D920C42835905A58B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 234D5647FDED25273C4A6535 /* Preview Assets.xcassets */; };
+		000DBBAAFC57ADAA8FC35EE0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */; };
+		00EEF642E8FEAD05D4A20B91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E431D483EE9835600F87AC /* User.swift */; };
+		05EA39B6BB3E4532280B3008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829826ACA644135D12F2DC9F /* Preview Assets.xcassets */; };
+		29EB5EE9FFB9B9A0A24A853A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AD4EF2BD757C14E4A53CE /* Logger.swift */; };
 		2BB21F5DA29DA41EF92B623C /* ChatworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE6628C79EC6195F906D3F /* ChatworkUITests.swift */; };
 		394844C3577270F2640A9EA1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE2C2C7325B5712392FC60 /* HTTPMethod.swift */; };
-		3EE6B7B01D039D779612E519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32D1BB9E6FE535685E779501 /* Assets.xcassets */; };
-		439D614305B59D46D2D93316 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1EEAE27A9618339854BCC9 /* ContentView.swift */; };
-		44DABA58AFFFE4D076B3F2D2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA39AA3C586DBDB5149D38D9 /* Logger.swift */; };
+		402BD4A41C9A08D0135DB578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A40F734BF2BD1313E4D2E5 /* User.swift */; };
+		44AFC8BA30B8C9BEE30DDE75 /* ChatworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7EEFD13F28A5D2C9B39FF /* ChatworkAPIClient.swift */; };
 		509C626257E4FA1FE6F9DDB3 /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AE2282CE4ACBE252A36C1B /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5722948D35C85037CBB042F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */; };
 		57AF9CB1D9B38B9DE7356234 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 195C4AEC869473122DC1CB38 /* KeychainAccess */; };
-		5B7E8700F7D766FAAA5F3391 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B541C409487752BB2F2661FC /* SharedData.swift */; };
 		622231C71A8FA752543D218D /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15340545B4C481341DE0A8CE /* API.framework */; };
 		632AA33CDB4BD59D95A789CF /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15340545B4C481341DE0A8CE /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		698296BD9CC1B63962418074 /* API.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4323C6E41DCFE88DA8F8CABC /* API.docc */; };
@@ -26,12 +27,16 @@
 		957CC9BDDC28D7EC5BB69F6F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1027127972041D3F471CE8 /* APIClient.swift */; };
 		9BC82FDC435D8EF2FCCDD8D5 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6BD9ED39B3EFBE9C0498D1 /* APITests.swift */; };
 		9CF7C68C80909FAB5B53DF3F /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15340545B4C481341DE0A8CE /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A7ADA3F09FE28C467BC8FAA5 /* ChatworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE61361988B3FCE554023526 /* ChatworkAPIClient.swift */; };
+		AAD01C728F9992198318E843 /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17937140E224141E943E63EA /* SharedData.swift */; };
+		B16FD58737F232B84CB11EAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A779473B3342E3BF4534E8 /* Assets.xcassets */; };
 		B4C429D3569CF84468AC7CE0 /* URLQueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80863797D94104795D92CC04 /* URLQueryBuilder.swift */; };
 		B9A62FF84C1D3EC3171ED732 /* CodableExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1806BAFC2C9470678F194CA9 /* CodableExtensions.swift */; };
+		BA4679FA05DDE7C2DF0AEA4D /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37AD9B3107F159754A0C98D /* UserService.swift */; };
+		BA7D27F5A460CB3AD48FDC44 /* ChatworkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262E96555F925FE8706788FD /* ChatworkApp.swift */; };
 		CAED66D3EC8D7FED1DDC9775 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450060C30BAD748D00FAB5AF /* APIError.swift */; };
 		DB86DB522D24EA0D7CF7CF95 /* ChatworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9734CBB925DFFB4717B26D3 /* ChatworkTests.swift */; };
 		DDA0F48DDA25D57BCE319D7A /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14285FCAF740CA5F3D572925 /* URLSessionProtocol.swift */; };
+		E611DF50E2682C4849075580 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5431C1F92628ECA723C3608 /* UserAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,30 +99,35 @@
 		0E1027127972041D3F471CE8 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		14285FCAF740CA5F3D572925 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		15340545B4C481341DE0A8CE /* API.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = API.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17937140E224141E943E63EA /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
 		1806BAFC2C9470678F194CA9 /* CodableExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableExtensions.swift; sourceTree = "<group>"; };
-		234D5647FDED25273C4A6535 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		262E96555F925FE8706788FD /* ChatworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkApp.swift; sourceTree = "<group>"; };
 		2FFE6628C79EC6195F906D3F /* ChatworkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkUITests.swift; sourceTree = "<group>"; };
-		32D1BB9E6FE535685E779501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30A779473B3342E3BF4534E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A509C16B3E828ED6965452D /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		4323C6E41DCFE88DA8F8CABC /* API.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = API.docc; sourceTree = "<group>"; };
 		450060C30BAD748D00FAB5AF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		47A40F734BF2BD1313E4D2E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		490B45A743935AD2F6218A62 /* ChatworkTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ChatworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E01EBA1F1FB88B7BD0D51C7 /* ChatworkUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ChatworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBE2C2C7325B5712392FC60 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		60037ACCDE99F21E68DCBC9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		60FC3EE3AF7CE9DE234BA633 /* ChatworkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkApp.swift; sourceTree = "<group>"; };
 		80863797D94104795D92CC04 /* URLQueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryBuilder.swift; sourceTree = "<group>"; };
+		829826ACA644135D12F2DC9F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		86E431D483EE9835600F87AC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		8C6C4C63D2841D98C72F5ED4 /* ChatworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8F1EEAE27A9618339854BCC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		97971259AD110140985E8D8C /* APITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = APITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FE7EEFD13F28A5D2C9B39FF /* ChatworkAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkAPIClient.swift; sourceTree = "<group>"; };
 		A9734CBB925DFFB4717B26D3 /* ChatworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkTests.swift; sourceTree = "<group>"; };
-		B541C409487752BB2F2661FC /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		B37AD9B3107F159754A0C98D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B6AE2282CE4ACBE252A36C1B /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		C5431C1F92628ECA723C3608 /* UserAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		C6AE372AF68C295699D21088 /* Chatwork.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chatwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CD6BD9ED39B3EFBE9C0498D1 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
-		CE61361988B3FCE554023526 /* ChatworkAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkAPIClient.swift; sourceTree = "<group>"; };
+		DF1AD4EF2BD757C14E4A53CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB88E99925B1D05D7C39B887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		FA39AA3C586DBDB5149D38D9 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +151,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15D69CBAA201FA39D003032F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		26B4A89FF04E559DD3A39915 /* Chatwork */ = {
+			isa = PBXGroup;
+			children = (
+				C5431C1F92628ECA723C3608 /* UserAPI.swift */,
+			);
+			path = Chatwork;
+			sourceTree = "<group>";
+		};
+		46CF750DDF9E32D5B11EF818 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				917B74A1966D86E363BCE963 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		4CAA04391DD67789A933BFC2 /* ChatworkUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,14 +187,32 @@
 		4E57430066BD94FED67CCCDA /* Chatwork */ = {
 			isa = PBXGroup;
 			children = (
-				32D1BB9E6FE535685E779501 /* Assets.xcassets */,
-				60FC3EE3AF7CE9DE234BA633 /* ChatworkApp.swift */,
-				8F1EEAE27A9618339854BCC9 /* ContentView.swift */,
 				EB88E99925B1D05D7C39B887 /* Info.plist */,
-				F91490908943740458978658 /* Preview Content */,
-				6B3711F36661DE60049DEC99 /* Utils */,
+				5A2A32D2BDAFFE93743D8174 /* Resources */,
+				56A6FFFAED1B5BD98D193BBF /* Sources */,
 			);
 			path = Chatwork;
+			sourceTree = "<group>";
+		};
+		56A6FFFAED1B5BD98D193BBF /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				66E23DB1373904624362F077 /* Models */,
+				C003849A93D379DC770CF96D /* Services */,
+				46CF750DDF9E32D5B11EF818 /* UI */,
+				B7EF313C9438E898193B08F3 /* Utils */,
+				15D69CBAA201FA39D003032F /* ViewModels */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		5A2A32D2BDAFFE93743D8174 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30A779473B3342E3BF4534E8 /* Assets.xcassets */,
+				A7106B0917CCF307929E00E6 /* Preview Content */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		5B116DBB2E534EE4F0653A25 /* Extensions */ = {
@@ -183,6 +235,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		66E23DB1373904624362F077 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86E431D483EE9835600F87AC /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		6A705D50516BE9FB4C4FA708 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,21 +254,13 @@
 			path = API;
 			sourceTree = "<group>";
 		};
-		6B3711F36661DE60049DEC99 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				CE61361988B3FCE554023526 /* ChatworkAPIClient.swift */,
-				FA39AA3C586DBDB5149D38D9 /* Logger.swift */,
-				B541C409487752BB2F2661FC /* SharedData.swift */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
 		869CB3D239D94634CE54E651 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				26B4A89FF04E559DD3A39915 /* Chatwork */,
 				8E419057B3D1F1ABCEE77742 /* Errors */,
 				5B116DBB2E534EE4F0653A25 /* Extensions */,
+				CCDC9F81E7D649CFFFA7DC54 /* Models */,
 				8BC36019C8056307A5DEC2AA /* Utils */,
 			);
 			path = Sources;
@@ -234,12 +286,55 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		917B74A1966D86E363BCE963 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				262E96555F925FE8706788FD /* ChatworkApp.swift */,
+				E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7106B0917CCF307929E00E6 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				829826ACA644135D12F2DC9F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B7EF313C9438E898193B08F3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9FE7EEFD13F28A5D2C9B39FF /* ChatworkAPIClient.swift */,
+				DF1AD4EF2BD757C14E4A53CE /* Logger.swift */,
+				17937140E224141E943E63EA /* SharedData.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BA364D6FC92549B4FA3C629C /* ChatworkTests */ = {
 			isa = PBXGroup;
 			children = (
 				A9734CBB925DFFB4717B26D3 /* ChatworkTests.swift */,
 			);
 			path = ChatworkTests;
+			sourceTree = "<group>";
+		};
+		C003849A93D379DC770CF96D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B37AD9B3107F159754A0C98D /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CCDC9F81E7D649CFFFA7DC54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				47A40F734BF2BD1313E4D2E5 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D58288113AECC79FD8433E88 /* APITests */ = {
@@ -260,14 +355,6 @@
 				4CAA04391DD67789A933BFC2 /* ChatworkUITests */,
 				60EDCCDD65B0C5767E7EF5BB /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		F91490908943740458978658 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				234D5647FDED25273C4A6535 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,8 +520,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EE6B7B01D039D779612E519 /* Assets.xcassets in Resources */,
-				255A879D920C42835905A58B /* Preview Assets.xcassets in Resources */,
+				B16FD58737F232B84CB11EAF /* Assets.xcassets in Resources */,
+				05EA39B6BB3E4532280B3008 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,11 +532,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A7ADA3F09FE28C467BC8FAA5 /* ChatworkAPIClient.swift in Sources */,
-				0B0E30B2BF37B8753D7BC747 /* ChatworkApp.swift in Sources */,
-				439D614305B59D46D2D93316 /* ContentView.swift in Sources */,
-				44DABA58AFFFE4D076B3F2D2 /* Logger.swift in Sources */,
-				5B7E8700F7D766FAAA5F3391 /* SharedData.swift in Sources */,
+				44AFC8BA30B8C9BEE30DDE75 /* ChatworkAPIClient.swift in Sources */,
+				BA7D27F5A460CB3AD48FDC44 /* ChatworkApp.swift in Sources */,
+				29EB5EE9FFB9B9A0A24A853A /* Logger.swift in Sources */,
+				5722948D35C85037CBB042F6 /* LoginView.swift in Sources */,
+				000DBBAAFC57ADAA8FC35EE0 /* LoginViewModel.swift in Sources */,
+				AAD01C728F9992198318E843 /* SharedData.swift in Sources */,
+				00EEF642E8FEAD05D4A20B91 /* User.swift in Sources */,
+				BA4679FA05DDE7C2DF0AEA4D /* UserService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +571,8 @@
 				394844C3577270F2640A9EA1 /* HTTPMethod.swift in Sources */,
 				B4C429D3569CF84468AC7CE0 /* URLQueryBuilder.swift in Sources */,
 				DDA0F48DDA25D57BCE319D7A /* URLSessionProtocol.swift in Sources */,
+				402BD4A41C9A08D0135DB578 /* User.swift in Sources */,
+				E611DF50E2682C4849075580 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
