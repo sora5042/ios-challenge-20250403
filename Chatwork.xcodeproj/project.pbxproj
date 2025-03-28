@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,12 @@
 		394844C3577270F2640A9EA1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE2C2C7325B5712392FC60 /* HTTPMethod.swift */; };
 		402BD4A41C9A08D0135DB578 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A40F734BF2BD1313E4D2E5 /* User.swift */; };
 		44AFC8BA30B8C9BEE30DDE75 /* ChatworkAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE7EEFD13F28A5D2C9B39FF /* ChatworkAPIClient.swift */; };
+		47BCC5E02D967EF700ABF6E7 /* RoomsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC5DF2D967EE200ABF6E7 /* RoomsAPI.swift */; };
+		47BCC5E22D96811300ABF6E7 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC5E12D96810D00ABF6E7 /* Room.swift */; };
+		47BCC5E42D968A2600ABF6E7 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC5E32D968A2100ABF6E7 /* Room.swift */; };
+		47BCC5E62D968AAC00ABF6E7 /* RoomsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC5E52D968AA500ABF6E7 /* RoomsService.swift */; };
+		47BCC6642D968D0200ABF6E7 /* ChatListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC6632D968CCA00ABF6E7 /* ChatListViewModel.swift */; };
+		47BCC6662D968E3000ABF6E7 /* ChatListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BCC6652D968E2800ABF6E7 /* ChatListView.swift */; };
 		509C626257E4FA1FE6F9DDB3 /* API.h in Headers */ = {isa = PBXBuildFile; fileRef = B6AE2282CE4ACBE252A36C1B /* API.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5722948D35C85037CBB042F6 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */; };
 		57AF9CB1D9B38B9DE7356234 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 195C4AEC869473122DC1CB38 /* KeychainAccess */; };
@@ -110,6 +116,12 @@
 		4323C6E41DCFE88DA8F8CABC /* API.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = API.docc; sourceTree = "<group>"; };
 		450060C30BAD748D00FAB5AF /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		47A40F734BF2BD1313E4D2E5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		47BCC5DF2D967EE200ABF6E7 /* RoomsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsAPI.swift; sourceTree = "<group>"; };
+		47BCC5E12D96810D00ABF6E7 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		47BCC5E32D968A2100ABF6E7 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		47BCC5E52D968AA500ABF6E7 /* RoomsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsService.swift; sourceTree = "<group>"; };
+		47BCC6632D968CCA00ABF6E7 /* ChatListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListViewModel.swift; sourceTree = "<group>"; };
+		47BCC6652D968E2800ABF6E7 /* ChatListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListView.swift; sourceTree = "<group>"; };
 		490B45A743935AD2F6218A62 /* ChatworkTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ChatworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E01EBA1F1FB88B7BD0D51C7 /* ChatworkUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ChatworkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FBE2C2C7325B5712392FC60 /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
@@ -158,6 +170,7 @@
 		15D69CBAA201FA39D003032F /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC6632D968CCA00ABF6E7 /* ChatListViewModel.swift */,
 				C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */,
 			);
 			path = ViewModels;
@@ -166,6 +179,7 @@
 		26B4A89FF04E559DD3A39915 /* Chatwork */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC5DF2D967EE200ABF6E7 /* RoomsAPI.swift */,
 				C5431C1F92628ECA723C3608 /* UserAPI.swift */,
 			);
 			path = Chatwork;
@@ -252,6 +266,7 @@
 		66E23DB1373904624362F077 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC5E32D968A2100ABF6E7 /* Room.swift */,
 				86E431D483EE9835600F87AC /* User.swift */,
 			);
 			path = Models;
@@ -303,6 +318,7 @@
 		917B74A1966D86E363BCE963 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC6652D968E2800ABF6E7 /* ChatListView.swift */,
 				262E96555F925FE8706788FD /* ChatworkApp.swift */,
 				E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */,
 			);
@@ -338,6 +354,7 @@
 		C003849A93D379DC770CF96D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC5E52D968AA500ABF6E7 /* RoomsService.swift */,
 				B37AD9B3107F159754A0C98D /* UserService.swift */,
 			);
 			path = Services;
@@ -346,6 +363,7 @@
 		CCDC9F81E7D649CFFFA7DC54 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				47BCC5E12D96810D00ABF6E7 /* Room.swift */,
 				47A40F734BF2BD1313E4D2E5 /* User.swift */,
 			);
 			path = Models;
@@ -547,12 +565,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				44AFC8BA30B8C9BEE30DDE75 /* ChatworkAPIClient.swift in Sources */,
+				47BCC5E42D968A2600ABF6E7 /* Room.swift in Sources */,
+				47BCC5E62D968AAC00ABF6E7 /* RoomsService.swift in Sources */,
+				47BCC6642D968D0200ABF6E7 /* ChatListViewModel.swift in Sources */,
 				BA7D27F5A460CB3AD48FDC44 /* ChatworkApp.swift in Sources */,
 				79A9C43476C20544B9B36DD1 /* Color.swift in Sources */,
 				29EB5EE9FFB9B9A0A24A853A /* Logger.swift in Sources */,
 				5722948D35C85037CBB042F6 /* LoginView.swift in Sources */,
 				000DBBAAFC57ADAA8FC35EE0 /* LoginViewModel.swift in Sources */,
 				AAD01C728F9992198318E843 /* SharedData.swift in Sources */,
+				47BCC6662D968E3000ABF6E7 /* ChatListView.swift in Sources */,
 				1002CFE0229AD227DF69B139 /* SwiftUIExtensions.swift in Sources */,
 				00EEF642E8FEAD05D4A20B91 /* User.swift in Sources */,
 				BA4679FA05DDE7C2DF0AEA4D /* UserService.swift in Sources */,
@@ -580,6 +602,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				698296BD9CC1B63962418074 /* API.docc in Sources */,
+				47BCC5E02D967EF700ABF6E7 /* RoomsAPI.swift in Sources */,
+				47BCC5E22D96811300ABF6E7 /* Room.swift in Sources */,
 				957CC9BDDC28D7EC5BB69F6F /* APIClient.swift in Sources */,
 				832D3D02575AE5CE2FBFC303 /* APIEndpoint.swift in Sources */,
 				CAED66D3EC8D7FED1DDC9775 /* APIError.swift in Sources */,
