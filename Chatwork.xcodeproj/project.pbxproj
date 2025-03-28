@@ -382,30 +382,35 @@
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					1FE4003101FDE9B001A2592F = {
+						DevelopmentTeam = L6Q4H7M3DB;
 						ProvisioningStyle = Automatic;
 					};
 					5D5930F58CC39F913F85E097 = {
+						DevelopmentTeam = L6Q4H7M3DB;
 						ProvisioningStyle = Automatic;
 					};
 					77590A472FF5EA39A4081E2B = {
+						DevelopmentTeam = L6Q4H7M3DB;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9CCF6E57B49A10C2BDD72E73;
 					};
 					9CCF6E57B49A10C2BDD72E73 = {
+						DevelopmentTeam = L6Q4H7M3DB;
 						ProvisioningStyle = Automatic;
 					};
 					D0C3B10A49729F964D8E14E7 = {
+						DevelopmentTeam = L6Q4H7M3DB;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 301A0881F9CC035529BC9FF9 /* Build configuration list for PBXProject "Chatwork" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = ja;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
-				ja,
+				en,
 			);
 			mainGroup = E4E35C43163A720048DCC9EC;
 			packageReferences = (
@@ -550,9 +555,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -576,7 +581,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Test;
 		};
@@ -595,7 +599,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.API;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.API;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -618,7 +622,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.API;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.API;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -635,7 +639,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkUITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Chatwork;
@@ -651,7 +655,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatwork.app/Chatwork";
@@ -667,7 +671,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.APITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.APITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -682,7 +686,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatwork.app/Chatwork";
@@ -699,7 +703,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.Chatwork;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.Chatwork;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -715,7 +719,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.Chatwork;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.Chatwork;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -757,9 +761,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -776,7 +780,6 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -790,7 +793,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.Chatwork;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.Chatwork;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -805,7 +808,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.APITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.APITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -826,7 +829,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.API;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.API;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -843,7 +846,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkTests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkTests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Chatwork.app/Chatwork";
@@ -859,7 +862,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkUITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Chatwork;
@@ -902,9 +905,9 @@
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = L6Q4H7M3DB;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -928,7 +931,6 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -941,7 +943,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.APITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.APITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -956,7 +958,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ooayosora.ChatworkUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ooaysora.ChatworkUITests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Chatwork;

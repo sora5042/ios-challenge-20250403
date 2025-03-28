@@ -4,25 +4,15 @@ configs:
   Release: release
   Test: debug
 options:
-  bundleIdPrefix: jp.ooayosora
+  bundleIdPrefix: jp.ooaysora
   defaultConfig: Release
   deploymentTarget:
     iOS: 16.4
-  developmentLanguage: ja
   xcodeVersion: "16.0"
 settings:
   base:
     CODE_SIGN_STYLE: Automatic
-    TARGETED_DEVICE_FAMILY: "1,2"
-    ENABLE_USER_SCRIPT_SANDBOXING: YES
-configurations:
-  Debug:
-    buildSettings:
-      SWIFT_OPTIMIZATION_LEVEL: "-Onone"
-      ENABLE_TESTABILITY: YES
-  Release:
-    buildSettings:
-      SWIFT_OPTIMIZATION_LEVEL: "-Owholemodule"
+    DEVELOPMENT_TEAM: L6Q4H7M3DB
 packages:
   KeychainAccess:
     url: https://github.com/kishikawakatsumi/KeychainAccess
@@ -31,11 +21,9 @@ targets:
   Chatwork:
     type: application
     platform: iOS
-    info:
-      path: Chatwork/Info.plist
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: jp.ooayosora.Chatwork
+        PRODUCT_BUNDLE_IDENTIFIER: jp.ooaysora.Chatwork
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     sources:
       - path: Chatwork
