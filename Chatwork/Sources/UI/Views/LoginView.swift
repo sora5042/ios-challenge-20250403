@@ -22,6 +22,14 @@ struct LoginView: View {
         }
         .padding()
         .background(Color.lightGray)
+        .navigatorDestination($viewModel.navigation) { navigation in
+            switch navigation {
+            case .chatList:
+                ChatListView()
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)
+            }
+        }
         .alert($viewModel.error)
         .loading(isPresented: viewModel.isLoading)
     }

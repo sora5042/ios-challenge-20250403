@@ -16,6 +16,9 @@ final class LoginViewModel: ObservableObject {
     private(set) var isLoading: Bool = false
 
     @Published
+    var navigation: Navigation?
+
+    @Published
     var error: Error?
 
     init(
@@ -38,9 +41,16 @@ final class LoginViewModel: ObservableObject {
         do {
             _ = try await userService.fetchUser()
             dataStore.isLogin = true
+            navigation = .chatList
         } catch {
             dataStore.remove(credential: "apiToken")
             self.error = error
         }
+    }
+}
+
+extension LoginViewModel {
+    enum Navigation: Hashable {
+        case chatList
     }
 }
