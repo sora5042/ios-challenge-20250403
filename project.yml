@@ -13,6 +13,10 @@ settings:
   base:
     CODE_SIGN_STYLE: Automatic
     DEVELOPMENT_TEAM: L6Q4H7M3DB
+    ENABLE_BITCODE: 'NO'
+  configs:
+    Test:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: TEST
 packages:
   KeychainAccess:
     url: https://github.com/kishikawakatsumi/KeychainAccess

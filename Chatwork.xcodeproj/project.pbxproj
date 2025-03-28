@@ -3,13 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		000DBBAAFC57ADAA8FC35EE0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */; };
 		00EEF642E8FEAD05D4A20B91 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E431D483EE9835600F87AC /* User.swift */; };
 		05EA39B6BB3E4532280B3008 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 829826ACA644135D12F2DC9F /* Preview Assets.xcassets */; };
+		1002CFE0229AD227DF69B139 /* SwiftUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC19331BFC0FF5900E9F2F9B /* SwiftUIExtensions.swift */; };
 		29EB5EE9FFB9B9A0A24A853A /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1AD4EF2BD757C14E4A53CE /* Logger.swift */; };
 		2BB21F5DA29DA41EF92B623C /* ChatworkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFE6628C79EC6195F906D3F /* ChatworkUITests.swift */; };
 		394844C3577270F2640A9EA1 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBE2C2C7325B5712392FC60 /* HTTPMethod.swift */; };
@@ -22,6 +23,7 @@
 		632AA33CDB4BD59D95A789CF /* API.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 15340545B4C481341DE0A8CE /* API.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		698296BD9CC1B63962418074 /* API.docc in Sources */ = {isa = PBXBuildFile; fileRef = 4323C6E41DCFE88DA8F8CABC /* API.docc */; };
 		6FCADB433D51E67CA1EB097B /* API.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15340545B4C481341DE0A8CE /* API.framework */; };
+		79A9C43476C20544B9B36DD1 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10358CC97A2669261A1A58B /* Color.swift */; };
 		7C5A29928BCC6ADCBE53C01F /* ChatworkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6C4C63D2841D98C72F5ED4 /* ChatworkUITestsLaunchTests.swift */; };
 		832D3D02575AE5CE2FBFC303 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A509C16B3E828ED6965452D /* APIEndpoint.swift */; };
 		957CC9BDDC28D7EC5BB69F6F /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E1027127972041D3F471CE8 /* APIClient.swift */; };
@@ -118,6 +120,7 @@
 		8C6C4C63D2841D98C72F5ED4 /* ChatworkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		97971259AD110140985E8D8C /* APITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = APITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FE7EEFD13F28A5D2C9B39FF /* ChatworkAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkAPIClient.swift; sourceTree = "<group>"; };
+		A10358CC97A2669261A1A58B /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		A9734CBB925DFFB4717B26D3 /* ChatworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatworkTests.swift; sourceTree = "<group>"; };
 		B37AD9B3107F159754A0C98D /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B6AE2282CE4ACBE252A36C1B /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
@@ -125,14 +128,11 @@
 		C6AE372AF68C295699D21088 /* Chatwork.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Chatwork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9AD66C5E2868D4039330B69 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CD6BD9ED39B3EFBE9C0498D1 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		DC19331BFC0FF5900E9F2F9B /* SwiftUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIExtensions.swift; sourceTree = "<group>"; };
 		DF1AD4EF2BD757C14E4A53CE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		E19A2E6F88432B8A2C96C8C5 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EB88E99925B1D05D7C39B887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		47AFD1F82D964E2E000BE006 /* Extensions */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Extensions; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		361D4695526E14D194030D3D /* Frameworks */ = {
@@ -171,10 +171,19 @@
 			path = Chatwork;
 			sourceTree = "<group>";
 		};
+		3E1F160745F9938333789826 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10358CC97A2669261A1A58B /* Color.swift */,
+				DC19331BFC0FF5900E9F2F9B /* SwiftUIExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		46CF750DDF9E32D5B11EF818 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				47AFD1F82D964E2E000BE006 /* Extensions */,
+				3E1F160745F9938333789826 /* Extensions */,
 				917B74A1966D86E363BCE963 /* Views */,
 			);
 			path = UI;
@@ -440,9 +449,6 @@
 			dependencies = (
 				BEB1013EB2F60A6E62756D44 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				47AFD1F82D964E2E000BE006 /* Extensions */,
-			);
 			name = Chatwork;
 			packageProductDependencies = (
 				195C4AEC869473122DC1CB38 /* KeychainAccess */,
@@ -542,10 +548,12 @@
 			files = (
 				44AFC8BA30B8C9BEE30DDE75 /* ChatworkAPIClient.swift in Sources */,
 				BA7D27F5A460CB3AD48FDC44 /* ChatworkApp.swift in Sources */,
+				79A9C43476C20544B9B36DD1 /* Color.swift in Sources */,
 				29EB5EE9FFB9B9A0A24A853A /* Logger.swift in Sources */,
 				5722948D35C85037CBB042F6 /* LoginView.swift in Sources */,
 				000DBBAAFC57ADAA8FC35EE0 /* LoginViewModel.swift in Sources */,
 				AAD01C728F9992198318E843 /* SharedData.swift in Sources */,
+				1002CFE0229AD227DF69B139 /* SwiftUIExtensions.swift in Sources */,
 				00EEF642E8FEAD05D4A20B91 /* User.swift in Sources */,
 				BA4679FA05DDE7C2DF0AEA4D /* UserService.swift in Sources */,
 			);
@@ -656,6 +664,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -678,7 +687,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = TEST;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -862,6 +871,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -1006,6 +1016,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = L6Q4H7M3DB;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
