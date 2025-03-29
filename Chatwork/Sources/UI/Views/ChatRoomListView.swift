@@ -1,5 +1,5 @@
 //
-//  ChatListView.swift
+//  ChatRoomListView.swift
 //  Chatwork
 //
 //  Created by Sora Oya on 2025/03/28.
@@ -7,27 +7,37 @@
 
 import SwiftUI
 
-struct ChatListView: View {
+struct ChatRoomListView: View {
     @StateObject
-    var viewModel: ChatListViewModel = .init()
+    var viewModel: ChatRoomListViewModel = .init()
 
     var body: some View {
         VStack {
             Header()
             ChatList(
-                rooms: viewModel.rooms
-            )
+                rows: viewModel.rows
+            ) { id in
+                await viewModel.selectedRoom(id)
+            }
         }
         .background(Color.lightGray)
         .task {
             await viewModel.fetchRooms()
+        }
+        .navigatorDestination($viewModel.navigation) { navigation in
+            switch navigation {
+            case .chatRoom(let room):
+                ChatRoomView(viewModel: .init(room: room))
+                    .navigationBarHidden(true)
+                    .navigationBarTitleDisplayMode(.inline)
+            }
         }
         .alert($viewModel.error)
         .loading(isPresented: viewModel.isLoading)
     }
 }
 
-struct Header: View {
+private struct Header: View {
     var body: some View {
         VStack {
             Text("すべてのチャット")
@@ -41,16 +51,23 @@ struct Header: View {
 }
 
 private struct ChatList: View {
-    var rooms: [ChatListViewModel.Room]
-
+    var rows: [ChatRoomListViewModel.Row]
+    var selectedRoomAction: @MainActor (Int) async -> Void
+    
     var body: some View {
-        List(rooms, id: \.self) { room in
+        List(rows, id: \.self) { row in
             Row(
-                name: room.name,
-                iconURL: room.iconURL
+                name: row.name,
+                iconURL: row.iconURL
             )
             .listRowInsets(EdgeInsets())
             .background(.white)
+            .contentShape(Rectangle())
+            .onTapGesture {
+                Task {
+                    await selectedRoomAction(row.id)
+                }
+            }
         }
         .listStyle(.plain)
     }
@@ -89,5 +106,5 @@ private struct Row: View {
 }
 
 #Preview {
-    ChatListView()
+    ChatRoomListView()
 }

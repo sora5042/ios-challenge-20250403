@@ -21,7 +21,7 @@ struct ChatworkApp: App {
                 case .login:
                     LoginView()
                 case .chatList:
-                    ChatListView()
+                    ChatRoomListView()
                 }
             }
             .navigationViewStyle(.stack)

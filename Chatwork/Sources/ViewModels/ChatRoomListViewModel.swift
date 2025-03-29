@@ -1,5 +1,5 @@
 //
-//  ChatListViewModel.swift
+//  ChatRoomListViewModel.swift
 //  Chatwork
 //
 //  Created by Sora Oya on 2025/03/28.
@@ -8,14 +8,17 @@
 import Foundation
 
 @MainActor
-final class ChatListViewModel: ObservableObject {
-    let roomsService: RoomsService
+final class ChatRoomListViewModel: ObservableObject {
+    private let roomsService: RoomsService
 
     @Published
     private(set) var isLoading: Bool = false
 
     @Published
-    private(set) var rooms: [Room] = []
+    private(set) var rows: [Row] = []
+
+    @Published
+    var navigation: Navigation?
 
     @Published
     var error: Error?
@@ -32,30 +35,43 @@ final class ChatListViewModel: ObservableObject {
 
         do {
             let rooms = try await roomsService.fetchRooms()
-            self.rooms = rooms.map { .init(room: $0) }
+            self.rows = rooms.map { .init(room: $0) }
+        } catch {
+            self.error = error
+        }
+    }
+    
+    func selectedRoom(_ id: Int) async {
+        do {
+            let room = try await roomsService.fetchRoom(id)
+            navigation = .chatRoom(room: room)
         } catch {
             self.error = error
         }
     }
 }
 
-extension ChatListViewModel {
-    struct Room: Hashable {
+extension ChatRoomListViewModel {
+    struct Row: Hashable {
         let id: Int
         let name: String
         let type: ChatType
         let iconURL: URL?
         let lastUpdateTime: Int
-        
+
         enum ChatType: Hashable {
             case my
             case direct
             case group
         }
     }
+    
+    enum Navigation: Hashable {
+        case chatRoom(room: Room)
+    }
 }
 
-extension ChatListViewModel.Room {
+extension ChatRoomListViewModel.Row {
     init(room: Room) {
         self.init(
             id: room.roomID,
@@ -67,7 +83,7 @@ extension ChatListViewModel.Room {
     }
 }
 
-extension ChatListViewModel.Room.ChatType {
+extension ChatRoomListViewModel.Row.ChatType {
     init(type: Room.ChatType) {
         switch type {
         case .my:

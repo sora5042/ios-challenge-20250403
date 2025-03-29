@@ -25,7 +25,7 @@ struct LoginView: View {
         .navigatorDestination($viewModel.navigation) { navigation in
             switch navigation {
             case .chatList:
-                ChatListView()
+                ChatRoomListView()
                     .navigationBarHidden(true)
                     .navigationBarTitleDisplayMode(.inline)
             }

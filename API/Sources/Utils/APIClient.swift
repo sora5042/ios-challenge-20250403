@@ -33,6 +33,8 @@ extension APIClient {
         if method != .get, !query.isEmpty {
             request.httpBody = query.data(using: .utf8)
         }
+        
+        print(">>>>>", request)
 
         return request
     }
