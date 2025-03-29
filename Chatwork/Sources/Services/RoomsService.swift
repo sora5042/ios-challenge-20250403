@@ -12,6 +12,7 @@ protocol RoomsService {
     func fetchRooms() async throws -> [Room]
     func fetchRoom(_ id: Int) async throws -> Room
     func fetchMessages(roomID: Int) async throws -> [Message]
+    func sendMessage(roomID: Int, message: String) async throws
 }
 
 extension RoomsService {
@@ -25,6 +26,10 @@ extension RoomsService {
 
     func fetchMessages(roomID: Int) async throws -> [Message] {
         try await fetchMessages(roomID: roomID)
+    }
+    
+    func sendMessage(roomID: Int, message: String) async throws {
+        try await sendMessage(roomID: roomID, message: message)
     }
 }
 
@@ -62,14 +67,18 @@ struct DefaultRoomsService: RoomsService {
         return response.map { message in
                 .init(
                     messageID: message.message_id,
-                    accountID: message.account.account_id,
-                    accountName: message.account.name,
-                    iconImageURL: message.account.avatar_image_url,
-                    message: message.body,
-                    sendTime: message.send_time,
-                    updateTime: message.update_time
+                    accountID: message.account?.account_id ?? 0,
+                    accountName: message.account?.name ?? "",
+                    iconImageURL: message.account?.avatar_image_url ?? "",
+                    message: message.body ?? "",
+                    sendTime: message.send_time ?? 0,
+                    updateTime: message.update_time ?? 0
                 )
         }
+    }
+
+    func sendMessage(roomID: Int, message: String) async throws {
+        try await roomsAPI.postMessage(.init(body: message), id: roomID)
     }
 }
 

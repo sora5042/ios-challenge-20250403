@@ -29,6 +29,12 @@ public struct RoomsAPI: APIEndpoint {
     public func getMessages(_ param: GetParam, id: Int) async throws -> [Message] {
         try await apiClient.response(method: .get, path: path + "/\(id)" + "/messages", parameters: param)
     }
+
+    /// チャットメッセージを送信する
+    @discardableResult
+    public func postMessage(_ param: PostParam, id: Int) async throws -> Message {
+        try await apiClient.response(method: .post, path: path + "/\(id)" + "/messages", parameters: param)
+    }
 }
 
 extension RoomsAPI {
@@ -41,5 +47,19 @@ extension RoomsAPI {
         /// 強制的に最大件数まで取得するかどうか。0を指定した場合（既定）は前回取得分からの差分のみ。
         /// 1を指定した場合は最新のメッセージを最大100件まで取得。
         public var force: Int?
+    }
+
+    /// Postリクエスト用パラメータ
+    public struct PostParam: Encodable {
+        public init(body: String, self_unread: Int? = nil) {
+            self.body = body
+            self.self_unread = self_unread
+        }
+
+        /// メッセージ本文
+        public var body: String
+        /// 投稿するメッセージを自分から見て未読にするか。
+        /// 0を指定した場合（既定）は既読、1を指定した場合は未読にする。
+        public var self_unread: Int?
     }
 }

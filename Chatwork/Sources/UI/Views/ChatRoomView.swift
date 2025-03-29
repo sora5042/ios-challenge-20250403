@@ -17,6 +17,10 @@ struct ChatRoomView: View {
             ChatList(
                 messages: viewModel.messages
             )
+            Spacer()
+            MessageField { message in
+                await viewModel.sendMessage(message: message)
+            }
         }
         .background(Color.lightGray)
         .task {
@@ -105,6 +109,38 @@ private struct Row: View {
             Spacer()
         }
         .padding()
+    }
+}
+
+private struct MessageField: View {
+    @State
+    var message: String = ""
+    var sendAction: @MainActor (String) async -> Void
+
+    var body: some View {
+        HStack {
+            TextField("メッセージを入力", text: $message)
+                .textFieldStyle(.roundedBorder)
+                .padding(.horizontal)
+            Button {
+                Task {
+                    await sendAction(message)
+                    message = ""
+                }
+            } label: {
+                Text("送信")
+                    .bold()
+                    .foregroundStyle(.white)
+                    .padding(.vertical, 10)
+                    .padding(.horizontal, 20)
+                    .background(Color.deepNavy)
+                    .cornerRadius(8)
+            }
+            .disabled(message.isEmpty, dimmed: true)
+        }
+        .padding()
+        .background(.white)
+        .shadow(color: .black.opacity(0.1), radius: 4, x: 0, y: -2)
     }
 }
 

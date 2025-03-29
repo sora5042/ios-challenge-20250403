@@ -43,6 +43,20 @@ final class ChatRoomViewModel: ObservableObject {
             self.error = error
         }
     }
+
+    func sendMessage(message: String) async {
+        guard !message.isEmpty else { return }
+
+        isLoading = true
+        defer { isLoading = false }
+        
+        do {
+            try await roomsService.sendMessage(roomID: room.roomID, message: message)
+            await fetchMessages()
+        } catch {
+            self.error = error
+        }
+    }
 }
 
 extension ChatRoomViewModel {
